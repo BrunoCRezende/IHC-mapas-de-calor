@@ -1,0 +1,345 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor original do texto */
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #3A6EA5;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0; /* Garante que o header fique no topo */
+    left: 0; /* Fixa no lado esquerdo da tela */
+    width: 100%;
+    height: 3rem;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.header img {
+    width: 2rem;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons img {
+    width: 25px;
+    margin: 0 10px;
+}
+
+/* Conteúdo principal */
+.container {
+    margin-top: 15px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Botões de ação */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 40px;
+}
+
+.action-buttons .card {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 15rem;
+    height: 18rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.action-buttons .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Imagem principal */
+.main-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.main-image img {
+    width: 35rem;
+}
+
+/* Rodapé */
+footer {
+    background: #fff;
+    padding: 30px 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-self: self-end;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 5rem;
+    background-color: #3A6EA5;
+    position: fixed;
+    color: white;
+    padding-top: 3rem;
+}
+
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.sidebar ul li:hover {
+    background-color: #28496d;
+}
+
+.sidebar ul li img {
+    width: 2rem;
+}
+
+/* Conteúdo principal com sidebar */
+.main-content {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 240px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Caixa de pesquisa */
+.search-bar {
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    width: 10%;
+
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.search-bar img {
+    width: 1.5rem;
+}
+/* Tabela de Alunos */
+.students-list {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    width: 70%;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.student:last-child {
+    border-bottom: none;
+}
+
+.student:hover {
+    background-color: #f5f5f5;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.student-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.student-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.student-ra {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.student-ra img {
+    width: 4.5rem;
+    margin-left: 10px;
+}
+
+/* Botão Adicionar Aluno */
+.add-student {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.add-student button {
+    background-color: #3A6EA5;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.add-student button:hover {
+    background-color: #4A8BC9;
+}
